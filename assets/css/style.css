@@ -316,6 +316,51 @@ button {
     transform: translateY(-.5rem);
 }
 
+/* Css redes sociales */
+footer .social-media {
+	align-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+}
+
+footer .social-media .ctn-icon:hover a,
+footer .social-media .ctn-icon:focus a,
+footer .social-media .ctn-icon:active a {
+	transform: rotate3d(0, 1, 0, 1turn);
+}
+
+footer .social-media .ctn-icon a {
+	background-color: #000000;
+	border-radius: 100px;
+	color: #ffffff;
+	display: block;
+	height: 60px;
+	margin: 20px;
+	text-align: center;
+	transition: transform 1.2s ease;
+	width: 60px;
+}
+
+footer .social-media .ctn-icon a.github {
+	background-color: #000000;
+}
+
+footer .social-media .ctn-icon a.linkedin {
+	background-color: #3b5998;
+}
+
+footer .social-media .ctn-icon a.instagram {
+	background-color: #c13584;
+}
+
+footer .social-media .ctn-icon a i {
+	font-size: 20px;
+	line-height: 60px;
+}
+
+
 @media screen and (min-width:968px) {
     :root {
         --biggest-font-size: 2.5rem;
