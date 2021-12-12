@@ -333,11 +333,20 @@ footer .social-media {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-    width: 100%;
+}
+
+.footer {
+    margin-top: 50px;
     margin-bottom: -25px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
     background-color: #e45579;
+}
+
+.section__title {
+    margin-top: -10px;
+    margin-bottom: 60px;
+    color: #000000;
 }
 
 footer .social-media .ctn-icon:hover a,
@@ -459,7 +468,106 @@ body.dark-theme {
     }
 
     .adornos__container {
-        padding: 0 90px;
+        grid-template-columns: repeat(2, 142px);
+        justify-content: center;
+        gap: 2.5rem 3.5rem;
+        padding: 0 100px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding: 6.5rem 0 2rem;
+    }
+
+    .nav {
+        height: calc(var(--hader-height) + 1.5rem);
+        column-gap: 3rem;
+    }
+
+    .nav__toggle,
+    .nav__close,
+    .nav__img {
+        display: none;
+    }
+
+    .nav__menu {
+        margin-left: auto;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        column-gap: 3rem;
+    }
+
+    .dark-theme .nav__menu {
+        box-shadow: none;
+    }
+
+    .home__container,
+    .adornos__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding-top: 8rem;
+    }
+
+    .home__data {
+        text-align: initial;
+    }
+
+    .home__description {
+        padding: 0;
+    }
+
+    .informacion__container {
+        grid-template-columns: repeat(3, 142px);
+        column-gap: 5rem;
+    }
+    .descripcion {
+        padding: 0;
+
+    }
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home__container {
+        column-gap: 1rem;
+    }
+    .home__img{ 
+        width: 500px;
+    }
+    .home__description {
+        padding-right: 8rem;
+    }
+
+    .informacion__container {
+        column-gap: 8rem;
+        padding-top: 2rem;
+    }
+
+    .informacion__img {
+        width: 120px;
+    }
+
+    .adornos__container {
+        padding-top: 2rem;
+    }
+
+    .adornos__card {
+        margin-bottom: 5rem;
+    }
+
+    .adornos__title {
+        font-size: var(--h3-font-size);
     }
 }
 
