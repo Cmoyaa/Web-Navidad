@@ -127,6 +127,7 @@ button {
 
 /* Css para el Nav */
 .nav {
+    padding: 15px 0;
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
@@ -241,6 +242,7 @@ button {
 .descripcion {
     font-size: var(--small-font-size);
     padding: 0 2rem;
+    text-align: justify;
     margin-bottom: var(--mb-2-5);
 }
 
@@ -346,7 +348,12 @@ footer .social-media {
 .section__title {
     margin-top: -10px;
     margin-bottom: 60px;
-    color: #000000;
+    color: var(--title-color);
+}
+
+#tituloAdornos{
+    margin-bottom: -74px;
+    padding: 0px;
 }
 
 footer .social-media .ctn-icon:hover a,
@@ -360,11 +367,11 @@ footer .social-media .ctn-icon a {
 	border-radius: 100px;
 	color: #ffffff;
 	display: block;
-	height: 60px;
+	height: 40px;
 	margin: 20px;
 	text-align: center;
 	transition: transform 1.2s ease;
-	width: 60px;
+	width: 40px;
 }
 
 footer .social-media .ctn-icon a.github {
@@ -380,8 +387,19 @@ footer .social-media .ctn-icon a.instagram {
 }
 
 footer .social-media .ctn-icon a i {
-	font-size: 24px;
-	line-height: 60px;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+#redes {
+    font-size: 20px;
+    margin-top: -60px;
+    margin-bottom: 1px;
+    color: white;
+}
+
+.ctn-icon {
+    margin-bottom: -20px;
 }
 
 .scrollup {
@@ -444,6 +462,7 @@ body.dark-theme {
     background: #e45579;
 }
 
+/* Responsividad */
 @media screen and (max-width: 320px) {
     .container {
         margin-left: var(--mb-1);
@@ -515,6 +534,10 @@ body.dark-theme {
         padding-top: 8rem;
     }
 
+    .adornos__container {
+        margin: 0 80px;
+    }
+
     .home__data {
         text-align: initial;
     }
@@ -529,7 +552,6 @@ body.dark-theme {
     }
     .descripcion {
         padding: 0;
-
     }
 }
 
@@ -540,7 +562,7 @@ body.dark-theme {
     }
 
     .home__container {
-        column-gap: 1rem;
+        column-gap: 2rem;
     }
     .home__img{ 
         width: 500px;
@@ -558,9 +580,6 @@ body.dark-theme {
         width: 120px;
     }
 
-    .adornos__container {
-        padding-top: 2rem;
-    }
 
     .adornos__card {
         margin-bottom: 5rem;
