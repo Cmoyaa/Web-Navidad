@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="assets/img/santa.png" type="image/x-icon">
     <title>Navidad</title>
 </head>
@@ -14,7 +15,7 @@
         <nav class="nav container">
             <a href="#" class="nav__logo">
                 <img src="assets/img/logo.png" alt="" class="nav__logo-img"> 
-                Christmas
+                Navidad
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -72,31 +73,83 @@
             <div class="informacion__container grid">
                 <div class="informacion__content">
                     <img src="assets/img/familia.png" alt="" class="informacion__img">
-                    <h3 class="informacion__title">Momento familiar</h3>
+                    <h3 class="informacion__title">Familia</h3>
                     <p class="informacion__description">La familia se junta y disfruta de una cena.</p>
                 </div>
                 <div class="informacion__content">
                     <img src="assets/img/regalo.png" alt="" class="informacion__img">
-                    <h3 class="informacion__title">Momento familiar</h3>
-                    <p class="informacion__description">La familia se junta y disfruta de una cena.</p>
+                    <h3 class="informacion__title">Regalos</h3>
+                    <p class="informacion__description">Los niños en su mayoría reciben regalos.</p>
                 </div>
                 <div class="informacion__content">
-                    <img src="assets/img/familia.png" alt="" class="informacion__img">
-                    <h3 class="informacion__title">Momento familiar</h3>
-                    <p class="informacion__description">La familia se junta y disfruta de una cena.</p>
+                    <img src="assets/img/pelicula.png" alt="" class="informacion__img">
+                    <h3 class="informacion__title">Películas</h3>
+                    <p class="informacion__description">Puedes disfrutar de una película, esperando las 00:00 horas.</p>
                 </div>
             </div>
         </section>
 
-        <section class="contacto section container"></section>
+        <section class="adonos section container" id="imagenes">
+            <h2 class="section__title">
+                Adornos
+            </h2>
 
-        <section class="redes section container" id="home"></section>
+            <div class="adornos__container">
+                <div class="swiper adornos-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="adornos__card swiper-slide">
+                            <div class="adornos__overlay"></div>
+
+                            <img src="assets/img/calcetin.png" alt="Bota Navidad" class="adornos__img">
+                            <h3 class="adornos__title">Bota Navideña</h3>
+                        </article>
+
+                        <article class="adornos__card swiper-slide">
+                            <div class="adornos__overlay"></div>
+
+                            <img src="assets/img/cascanueces.png" alt="Cascanueces" class="adornos__img">
+                            <h3 class="adornos__title">Cascanueces</h3>
+                        </article>
+
+                        <article class="adornos__card swiper-slide">
+                            <div class="adornos__overlay"></div>
+
+                            <img src="assets/img/corona.png" alt="Guirnalda Navidad" class="adornos__img">
+                            <h3 class="adornos__title">Guirnalda</h3>
+                        </article>
+
+                        <article class="adornos__card swiper-slide">
+                            <div class="adornos__overlay"></div>
+
+                            <img src="assets/img/copo.png" alt="Copo Nieve" class="adornos__img">
+                            <h3 class="adornos__title">Copo de Nieve</h3>
+                        </article>
+
+                        <article class="adornos__card swiper-slide">
+                            <div class="adornos__overlay"></div>
+
+                            <img src="assets/img/duende.png" alt="Duende Navidad" class="adornos__img">
+                            <h3 class="adornos__title">Duende</h3>
+                        </article>
+
+                        <article class="adornos__card swiper-slide">
+                            <div class="adornos__overlay"></div>
+
+                            <img src="assets/img/galleta.png" alt="Galleta Navidad" class="adornos__img">
+                            <h3 class="adornos__title">Galleta de Navidad</h3>
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer section">
 
     </footer>
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

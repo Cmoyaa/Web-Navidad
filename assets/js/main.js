@@ -37,3 +37,20 @@ function scrollHeader(){
     else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+/* Carrusel para los Adornos */
+let newSwiper = new Swiper(".adornos-swiper", {
+    spaceBetween: 30,
+    loop: 'true',
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true
+    },
+    breakpoints: {
+        992: {
+          spaceBetween: 80,
+        },
+      },
+  });
