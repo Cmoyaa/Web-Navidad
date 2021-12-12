@@ -490,8 +490,9 @@ body.dark-theme {
         grid-template-columns: repeat(2, 142px);
         justify-content: center;
         gap: 2.5rem 3.5rem;
-        padding: 0 100px;
+        padding: 130px 100px;
     }
+    
 }
 
 @media screen and (min-width: 767px) {
