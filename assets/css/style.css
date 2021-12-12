@@ -463,7 +463,7 @@ body.dark-theme {
 }
 
 /* Responsividad */
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 280px){
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -473,6 +473,12 @@ body.dark-theme {
         grid-template-columns: 200px;
         justify-content: center;
     }
+
+    .adornos__container {
+        padding: 0 10px;
+        padding-top: 130px;
+    }
+
 }
 
 @media screen and (min-width: 576px) {
