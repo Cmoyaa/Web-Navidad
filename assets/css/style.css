@@ -333,7 +333,11 @@ footer .social-media {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 20px;
+    width: 100%;
+    margin-bottom: -25px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: #e45579;
 }
 
 footer .social-media .ctn-icon:hover a,
@@ -363,11 +367,11 @@ footer .social-media .ctn-icon a.linkedin {
 }
 
 footer .social-media .ctn-icon a.instagram {
-	background-color: var(--first-color);
+	background-color: rgb(42, 29, 226);
 }
 
 footer .social-media .ctn-icon a i {
-	font-size: 20px;
+	font-size: 24px;
 	line-height: 60px;
 }
 
@@ -431,6 +435,33 @@ body.dark-theme {
     background: #e45579;
 }
 
+@media screen and (max-width: 320px) {
+    .container {
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+
+    .informacion__container {
+        grid-template-columns: 200px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .home__description {
+        padding: 0 8rem;
+    }
+
+    .informacion__container {
+        grid-template-columns: repeat(2, 142px);
+        justify-content: center;
+        gap: 2.5rem 3.5rem;
+    }
+
+    .adornos__container {
+        padding: 0 90px;
+    }
+}
 
 @media screen and (min-width:968px) {
     :root {
