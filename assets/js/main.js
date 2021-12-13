@@ -118,3 +118,18 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/* Efecto en los index */
+const sr = ScrollReveal ({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 400,
+})
+
+sr.reveal(`.home__img`)
+sr.reveal(`.home__data`, {delay: 300})
+sr.reveal(`.informacion__img`, {origin: 'right'}, {interval: 100})
+sr.reveal(`.informacion__title`, {origin: 'right'}, {interval: 100})
+sr.reveal(`.informacion__description`, {origin: 'right'}, {interval: 100})
+
